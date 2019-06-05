@@ -16,6 +16,6 @@ deploy-prod:
   only:
     - master
   script:
-    - firebase use <project-name> --token $FIREBASE_TOKEN
-    - firebase deploy --only database -m "Pipe $CI_PIPELINE_ID Build $CI_BUILD_ID" --token $FIREBASE_TOKEN
+    - use <project-name> --token $FIREBASE_TOKEN
+    - deploy --only database -m "Pipe $CI_PIPELINE_ID Build $CI_BUILD_ID" --token $FIREBASE_TOKEN
 ```
