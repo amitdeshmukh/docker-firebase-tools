@@ -3,6 +3,18 @@ Docker image with firebase-tools
 
 Used to deploy firebase cloud functions, database rules and hosting
 
+## Bash into the container
+
+```bash
+docker container run --rm -p 9005:9005 -it paliari/firebase-tools sh
+```
+
+## Generate token to ci autentication
+
+```bash
+docker container run --rm -p 9005:9005 -it paliari/firebase-tools firebase login:ci
+```
+
 ## Gitlab ci example
 
 ```yml
