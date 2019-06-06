@@ -18,7 +18,7 @@ docker container run --rm -p 9005:9005 -it paliari/firebase-tools firebase login
 ## Gitlab ci example
 
 ```yml
-image: paliari/firebase-tools:latest
+image: paliari/firebase-tools:1.0.0-node10
 
 stages:
   - deploy
