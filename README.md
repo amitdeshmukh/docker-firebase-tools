@@ -6,6 +6,7 @@ Used to deploy firebase cloud functions, database rules and hosting
 | TAG                  | OS        |
 |----------------------|-----------|
 | 1.0.0-node10-alpine  | Alpine    |
+| 1.0.0-node10-stretch | Debian 9  |
 | 1.0.0-node8-stretch  | Debian 9  |
 
 ## Bash into the container
