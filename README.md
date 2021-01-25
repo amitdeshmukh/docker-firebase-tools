@@ -5,7 +5,9 @@ Used to deploy firebase cloud functions, database rules and hosting
 
 | TAG                  | OS        |
 |----------------------|-----------|
+| 1.0.0-node12-alpine  | Alpine    |
 | 1.0.0-node10-alpine  | Alpine    |
+| 1.0.0-node12-stretch | Debian 9  |
 | 1.0.0-node10-stretch | Debian 9  |
 | 1.0.0-node8-stretch  | Debian 9  |
 
@@ -15,13 +17,13 @@ Used to deploy firebase cloud functions, database rules and hosting
 docker container run --rm -p 9005:9005 -it paliari/firebase-tools:1.0.0-node10-alpine sh
 ```
 
-## Generate token to ci autentication
+## Generate token for CI Authentication
 
 ```bash
 docker container run --rm -p 9005:9005 -it paliari/firebase-tools:1.0.0-node10-alpine firebase login:ci
 ```
 
-## Gitlab ci example
+## Gitlab CI example
 
 ```yml
 image: paliari/firebase-tools:1.0.0-node10-alpine
